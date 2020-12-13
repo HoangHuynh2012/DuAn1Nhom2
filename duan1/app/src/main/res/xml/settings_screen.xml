@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:title="Edit Text"
+        android:key="user_name"
+        android:summary="set Your user name"/>
+
+    <SwitchPreference
+
+        android:title="Switch Preference"
+        android:key="switch"
+        android:summary="Switch false"/>
+
+    <SwitchPreference
+
+        android:drawableEnd="@drawable/ic_alarm"
+        android:title="Thông báo"
+        android:key="switch_active"
+        android:defaultValue="true"/>
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.Login.DangNhapBangEmail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDangNhapBangEmail"
+        android:layout_height="60dp"
+        app:title="Đăng nhập bằng Email"
+        app:titleTextColor="@color/background"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/Chao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarDangNhapBangEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/adamina"
+        android:text="Chào bạn,"
+        android:textColor="@color/black"
+        android:textSize="32dp" />
+
+
+    <TextView
+        android:id="@+id/tvNhapEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Chao"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="21dp"
+        android:textColor="@color/black"
+        android:text="Nhập email để đăng nhập." />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtDangNhapEmail"
+        android:layout_below="@+id/tvNhapEmail"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_maildangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập email của bạn" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtNhapMatKhauEmail"
+        android:layout_below="@+id/edtDangNhapEmail"
+        app:passwordToggleEnabled="true"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_passworddangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu email..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvQuenMatKhauEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNhapMatKhauEmail"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Quên mật khẩu?" />
+
+
+
+    <Button
+        android:id="@+id/btnDangNhapEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="#E4C76E"
+        android:text="TIẾP TỤC" />
+
+
+</RelativeLayout>

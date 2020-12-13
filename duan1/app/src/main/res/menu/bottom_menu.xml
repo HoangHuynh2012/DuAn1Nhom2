@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_house">
+    </item>
+    <item
+        android:id="@+id/menuu"
+        android:title="Menu"
+        android:icon="@drawable/ic_menu">
+    </item>
+    <item
+        android:id="@+id/cuahang"
+        android:title="Cửa hàng"
+        android:icon="@drawable/ic_cuahang">
+    </item>
+    <item
+        android:id="@+id/taikhoan"
+        android:title="Tài khoản"
+        android:icon="@drawable/ic_user">
+    </item>
+
+</menu>

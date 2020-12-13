@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customer.fragment.TrangChuFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTrangChu"
+        android:outlineAmbientShadowColor="@color/black"
+        app:subtitleTextColor="@color/white"
+        android:background="@drawable/ruond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/ic_userrr" />
+
+            <Button
+                android:id="@+id/btnDangNhapTrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:background="@drawable/botron_button"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/background"
+                android:text="Đăng nhập" />
+
+            <ImageView
+                android:id="@+id/imageChuong"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_alarm" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbarTrangChu"
+        android:background="#19676060"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_below="@+id/toolbarTrangChu"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="Ưu đãi đặt biệt từ THE CAFE" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/ImageSlide"
+                android:layout_below="@+id/textView4"
+                app:auto_cycle="true"
+                app:delay="0"
+                app:period="1000"
+                app:corner_radius="5"
+                android:background="#19676060"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"/>
+
+
+
+            <ScrollView
+                android:layout_marginTop="8dp"
+                android:id="@+id/scrollView1"
+                android:layout_below="@+id/ImageSlide"
+                android:layout_width="wrap_content"
+                android:background="#19676060"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tin tức"
+                                android:layout_marginLeft="18dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View All"
+                                android:layout_alignParentEnd="true"
+                                android:textStyle="bold"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/my_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_marginTop="15dp"
+
+                android:layout_below="@+id/scrollView1"
+                android:layout_width="wrap_content"
+                android:background="#19676060"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dành cho bạn"
+                                android:layout_marginLeft="18dp"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View All"
+                                android:layout_alignParentEnd="true"
+                                android:textStyle="bold"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/my_recycler2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

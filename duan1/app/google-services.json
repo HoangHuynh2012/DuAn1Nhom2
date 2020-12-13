@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198645587092",
+    "project_id": "fir-duan1-d3279",
+    "storage_bucket": "fir-duan1-d3279.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198645587092:android:52eb0398a21ad55bdbe881",
+        "android_client_info": {
+          "package_name": "com.example.duan1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198645587092-apr58sv8f81352po607nga2j5atujbkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-WpZayAqZB8NHXjNGxtpJ9Tx5upb71Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198645587092-apr58sv8f81352po607nga2j5atujbkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    >
+
+    <EditText
+        android:id="@+id/suatenkk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Tên Khách Hàng"
+        />
+    <EditText
+        android:id="@+id/suasdtkk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suatenkk"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Sdt"
+        />
+    <EditText
+        android:id="@+id/suamail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suasdtkk"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        />
+    <Button
+        android:id="@+id/btnUploadImagean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Cập Nhật"
+        android:background="@drawable/botron_buttongiohang"
+        android:layout_below="@+id/suamail"
+        android:textSize="18sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+               android:layout_below="@+id/suamail"
+                android:background="@drawable/botron_buttongiohang"
+                android:text="Quay Lại"
+                android:id="@+id/quaylai"
+                android:textSize="20sp"
+                />
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.Login.DoiMatKhauActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDoiMatKhau"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:title="Đổi mật khẩu"
+        app:titleTextColor="@color/background"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/toolbarDoiMatKhau"
+        android:layout_marginTop="32dp"
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editnhaptentaikhoan"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/edit1"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtNhapMatKhauCu"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu cũ..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        android:padding="8dp"
+        android:layout_below="@+id/edit2"
+        android:id="@+id/edit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtNhapMatKhauMoi"
+            android:layout_below="@+id/edtNhapMatKhauCu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu mới..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:id="@+id/edit4"
+        android:layout_below="@+id/edit3"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edtNhapLaiMatKhauMoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Nhập lại mật khẩu mới..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCapNhap"
+        android:layout_below="@+id/edit4"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@drawable/botron_button"
+        android:text="Cập Nhật" />
+
+    <Button
+        android:id="@+id/btnhuy"
+        android:layout_below="@+id/edit4"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:background="@drawable/botron_button"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="HỦY" />
+
+
+</RelativeLayout>

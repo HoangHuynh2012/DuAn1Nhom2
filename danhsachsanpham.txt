@@ -1,0 +1,41 @@
++ Cafe
+	⁃	Cafe đá
+	⁃	Cafe sữa đá
+	⁃	Cafe sữa nóng
+	⁃	Cafe nóng
+	⁃	Cacao nóng
+	⁃	Cacao đá
+	⁃	Energy Booster cafe
+	⁃	Machiato
+	⁃	Catcher cafe
++ Nước ngọt
+	⁃	Red bull
+	⁃	Pepsi
+	⁃	Coca cola
+	⁃	Sting 
+	⁃	Revive
++ Trà
+	⁃	Trà đào
+	⁃	Trà Lipton
+	⁃	Trà Lipton sữa
+	⁃	Trà chanh 
+	⁃	Trà Atiso
++ Sinh tố
+	⁃	dâu
+	⁃	Sapoche
+	⁃	Mãng cầu
+	⁃	Dừa
+	⁃	Bơ
++ Yogurt
+	⁃	Yogurt đá
+	⁃	Yogurt sữa đá
+	⁃	Yogurt trái cây thập cẩm 
+	⁃	Yogurt dâu
+	⁃	Yogurt việt quất
++ Món ăn vặt
+	⁃	Xúc xích chiên
+	⁃	Khoai tây chiên
+	⁃	Xoài lắc
+	⁃	Bánh tráng trộn
+	⁃	Phô mai que
+	⁃	Combo đồ chiên

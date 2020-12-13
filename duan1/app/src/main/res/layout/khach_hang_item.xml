@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivavata"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_userrr"/>
+<!-- UserName -->
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName của khách hàng"
+            android:layout_toRightOf="@id/tvUserName"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+<!--End UserName-->
+
+<!--Tên Khách Hàng-->
+
+        <TextView
+            android:id="@+id/tvTenKhachHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Khách Hàng:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_below="@+id/tvUserName"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên của khách hàng"
+            android:layout_toRightOf="@id/tvTenKhachHang"
+            android:layout_below="@id/tvUserName"
+            android:layout_margin="5dp"/>
+<!--End Tên Khách Hàng-->
+
+<!--Địa chỉ khách hàng-->
+
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa Chỉ:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ivavata"
+            android:layout_below="@+id/tvTenKhachHang"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tvvitri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ của khách hàng"
+            android:layout_toRightOf="@id/tvDiaChi"
+            android:layout_below="@id/tvemail"
+            android:layout_margin="5dp"/>
+
+<!--End Địa chỉ khách hàng-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

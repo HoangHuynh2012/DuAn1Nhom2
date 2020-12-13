@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.duan1">
+
+    <permission
+        android:name="com.example.duan1.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.duan1.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAn1">
+        <activity android:name=".admin.DoiMatKhauAdminActivity"></activity>
+        <activity android:name=".customer.SuaTTActivity" />
+        <activity android:name=".admin.ThemSanPhamUong" />
+        <activity android:name=".admin.ThemSanPhamPhoBien" />
+        <activity android:name=".admin.fragmentgiamgia.VouCherAdActivity" />
+        <activity android:name=".employee.fragmentmenu.XemGioHangNV" />
+        <activity android:name=".employee.fragmentvoucher.VoucherActivity" />
+        <activity android:name=".employee.fragmentemployee.ChiTietDonHangActivity" />
+        <activity android:name=".employee.fragmentemployee.LichSuActivity" />
+        <activity android:name=".employee.fragmentemployee.HoaDonChiTietActivity" />
+        <activity android:name=".employee.fragmentemployee.HoaDonActivity" />
+        <activity android:name=".admin.quanlykh.QLkhachhangActivity" />
+        <activity android:name=".admin.ThemVoucher" />
+        <activity android:name=".admin.ThemSanPhamAn" />
+        <activity android:name=".admin.fragmentqlnv.QuanLyNVActivity" />
+        <activity android:name=".admin.TaiKhoanAdActivity" />
+        <activity android:name=".admin.fragmentqlnv.ThemNhanVien" />
+        <activity
+            android:name=".admin.fragmentmenu.MenuAdFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".admin.TrangChuAdminActivity" />
+        <activity android:name=".customer.CaiDatActivity" />
+
+        <service
+            android:name=".customer.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6W91xh0S9rYmzPfGcjJAQ5VaG_e7oFMg" />
+
+        <activity android:name=".employee.TrangChuEmloyeeActivity" />
+        <activity android:name=".employee.TaiKhoanNVActivity" />
+        <activity android:name=".customer.DiaChiQuan" />
+        <activity android:name=".customer.XemGioHang" />
+        <activity android:name=".customer.ChaoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".customer.WebView" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".customer.Onbroading.OnbroadingActivity" />
+        <activity android:name=".customer.TrangChuActivity"></activity>
+        <activity android:name=".customer.ThongTinTaiKhoanActivity" />
+        <activity android:name=".customer.Login.DangNhapActivity" />
+        <activity android:name=".customer.Login.DangNhapBangEmail" />
+        <activity android:name=".customer.Login.DoiMatKhauActivity" />
+        <activity android:name=".customer.Login.LayMatKhauActivity" />
+        <activity android:name=".customer.Login.DangKiActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name:"
+            android:id="@+id/textview1"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:id="@+id/usernamekh"
+            android:layout_toRightOf="@+id/textview1"
+            android:text="username"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Khách Hàng:"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textview2"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_toRightOf="@+id/textview2"
+            android:text="tennhanvien"
+            android:id="@+id/tenkh"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gmail: "
+            android:layout_marginTop="50dp"
+            android:id="@+id/textview4"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_toRightOf="@+id/textview4"
+            android:text="gmail"
+            android:id="@+id/gmailkh"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sđt: "
+            android:layout_marginTop="75dp"
+            android:id="@+id/textview5"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_toRightOf="@+id/textview5"
+            android:text="sdt"
+            android:id="@+id/sdtkh"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="Xóa"
+            android:id="@+id/btn_xoakh"
+            android:background="@drawable/botron_buttongiohang"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="270dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

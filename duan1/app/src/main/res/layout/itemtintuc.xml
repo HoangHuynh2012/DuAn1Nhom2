@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="18dp"
+    android:background="@drawable/botron_button"
+    android:id="@+id/cardTinTuc"
+    app:cardElevation="12dp">
+
+    <RelativeLayout
+        android:id="@+id/background_color"
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageBanner"
+            android:layout_width="match_parent"
+            android:src="@drawable/uudai1"
+            android:layout_height="160dp" />
+
+        <TextView
+            android:id="@+id/tintuc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageBanner"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:text="!!!"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tintuc_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tintuc_title"
+            android:layout_marginLeft="8dp"
+            android:text="!!!"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

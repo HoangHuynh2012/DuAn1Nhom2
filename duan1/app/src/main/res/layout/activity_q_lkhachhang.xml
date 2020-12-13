@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.quanlykh.QLkhachhangActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarQuanLyNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ruond"
+        app:title="Quản lý khách hàng"
+        app:titleTextColor="#f6b96a"></androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:padding="8dp"
+        android:text="Danh sách khách hàng" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_quanlykh"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:padding="8dp"
+        android:text="Danh sách khách hàng dùng GMail" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_quanlykhmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.fragmentqlnv.ThemNhanVien">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarThemNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ruond"
+        app:title="Thêm nhân viên mới"
+        app:titleTextColor="#f6b96a"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvThongTinCoBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarThemNhanVien"
+        android:layout_marginTop="8dp"
+        android:background="#f7f7f7"
+        android:padding="8dp"
+        android:text="Thông tin cơ bản" />
+
+    <EditText
+        android:id="@+id/add_tennhanvien"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Tên Nhân Viên"
+        android:paddingStart="12dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/add_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="User Name"
+        android:paddingStart="12dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/add_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Password"
+        android:paddingStart="12dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/add_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Gmail"
+        android:paddingStart="12dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/add_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_input"
+        android:hint="Sđt"
+        android:paddingStart="12dp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background"
+            android:id="@+id/add_nhanvien"
+            android:text="Thêm" />
+    </RelativeLayout>
+</LinearLayout>

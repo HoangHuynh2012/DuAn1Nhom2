@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtsuatenvoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="tên khuyến mãi"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtsuamotavoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mô tả"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtsuamavoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mã khuyến mãi"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btsuavoucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:text="ĐỒng ý"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        <Button
+            android:id="@+id/bthuysua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:text="hủy"/>
+    </LinearLayout>
+</LinearLayout>

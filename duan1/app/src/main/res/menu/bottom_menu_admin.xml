@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nhanvien"
+        android:title="Nhân viên"
+        android:icon="@drawable/ic_house">
+    </item>
+    <item
+        android:id="@+id/sanpham"
+        android:title="Menu"
+        android:icon="@drawable/ic_menu">
+    </item>
+    <item
+        android:id="@+id/giamgia"
+        android:title="discount"
+        android:icon="@drawable/ic_discount">
+    </item>
+    <item
+        android:id="@+id/taikhoan"
+        android:title="Tài khoản"
+        android:icon="@drawable/ic_user">
+    </item>
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <TextView-->
+<!--        android:id="@+id/txtUploadImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Hình Sản Phẩm"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textSize="24sp" />-->
+
+    <ImageView
+        android:id="@+id/imgPreview_editsp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/txtUploadImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/chooseImage_editsp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/uploadProgress_editsp"-->
+<!--        android:layout_marginTop="40px"-->
+<!--        android:text="Chọn Hình Sản Phẩm"-->
+<!--        android:textSize="18sp" />-->
+
+    <EditText
+        android:id="@+id/edit_tensp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imgPreview_editsp"
+        android:layout_marginBottom="10dp"
+        android:hint="Tên Sản Phẩm"
+        />
+    <EditText
+        android:id="@+id/edit_giasp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_tensp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Giá"
+        />
+    <EditText
+        android:id="@+id/edit_slsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_giasp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Số Lượng"
+        />
+    <EditText
+        android:id="@+id/edit_gioithieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_slsp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Giới Thiệu"
+        />
+
+
+    <Button
+        android:id="@+id/btnUploadImage_editsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sửa"
+        android:textSize="18sp" />
+    <ProgressBar
+        android:id="@+id/uploadProgress_editsp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_gioithieu"
+        />
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:text="View Gallery"-->
+    <!--        android:id="@+id/viewGallery"-->
+    <!--        android:textSize="20sp"-->
+    <!--        />-->
+
+</RelativeLayout>

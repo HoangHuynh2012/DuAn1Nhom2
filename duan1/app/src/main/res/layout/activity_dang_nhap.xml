@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".customer.Login.DangNhapActivity">
+
+    <ImageView
+        android:gravity="center_horizontal"
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtUserName"
+        android:layout_below="@+id/tvImage"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:errorEnabled="true"
+            android:id="@+id/userdangnhap"
+            app:boxBackgroundMode="outline"
+            android:hint="Tên đăng nhập..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPassWord"
+        android:layout_below="@+id/edtUserName"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/passworddangnhap"
+            android:inputType="textPassword"
+            android:hint="Mật khẩu..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/edtPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu đăng nhập? " />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/botron_button"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:text="ĐĂNG NHẬP" />
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/botron_button"
+            android:backgroundTint="#E4C76E"
+            android:text="ĐĂNG KÝ"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvQuenMatKhau"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="#164ACF"
+        android:textStyle="bold"
+        android:text="Quên mật khẩu?Click vào đây" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_toLeftOf="@id/tvHoac"
+            android:background="@color/colorGrey" />
+
+        <TextView
+            android:id="@+id/tvHoac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#0C0C0C"
+            android:textStyle="bold"
+            android:text="Hoặc" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/tvHoac"
+            android:background="@color/colorGrey" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGmail"
+        android:layout_below="@+id/tvHoac"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_gmail"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Đăng nhập bằng Gmail" />
+
+
+
+</LinearLayout>

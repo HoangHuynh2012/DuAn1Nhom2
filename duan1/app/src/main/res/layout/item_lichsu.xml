@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardlichsu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/dategiaohang"
+            android:layout_alignParentTop="true"
+            android:textSize="15dp"
+            android:text="21/08/2020"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/dagiao"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:text="Đã Giao"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/dategiaohang"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"
+            android:padding="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tvmahd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="50dp"
+            android:text="mã hóa đơn"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/MaHD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvmahd"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="50dp"
+            android:text="0123456789123"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/giao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MaHD"
+            android:paddingTop="50dp"
+            android:layout_marginLeft="35dp"
+            android:textSize="17dp"
+            android:text="đã giao"/>
+
+        <TextView
+            android:id="@+id/tvTongtien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/giao"
+            android:paddingTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="17dp"
+            android:text="Tổng tiền"/>
+
+
+        <TextView
+            android:id="@+id/tggiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/giao"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="21:25"/>
+
+        <TextView
+            android:id="@+id/kc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/giao"
+            android:paddingTop="10dp"
+            android:layout_toRightOf="@id/tggiao"
+            android:layout_marginLeft="70dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="21.000đ"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
