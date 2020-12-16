@@ -73,6 +73,7 @@
             android:id="@+id/edtNhapSoDienThoai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="11"
             android:hint="Nhập số điện thoại" />
     </com.google.android.material.textfield.TextInputLayout>
 

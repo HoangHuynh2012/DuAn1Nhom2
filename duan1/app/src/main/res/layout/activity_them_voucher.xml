@@ -46,7 +46,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Giá Trị Khuyến Mãi"
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="Giá Trị Khuyến Mãi = X/100"
         android:id="@+id/giatrikm"
         />
 

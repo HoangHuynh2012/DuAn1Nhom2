@@ -86,9 +86,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginBottom="10dp"
-        android:text="Tải Lên Sản Phẩm Ăn"
+        android:layout_marginBottom="9dp"
         android:background="@drawable/botron_buttongiohang"
+        android:text="Tải Lên Sản Phẩm Uống"
         android:textSize="18sp" />
 
     <!--    <TextView-->

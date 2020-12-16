@@ -44,7 +44,6 @@ public class ThemSanPhamUong extends AppCompatActivity {
     private StorageReference mStorageRef;
     private DatabaseReference mDatabaseRef;
     private StorageTask mUploadTask;
-    CustomProgressDialog dialog = new CustomProgressDialog(ThemSanPhamUong.this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,14 +121,14 @@ public class ThemSanPhamUong extends AppCompatActivity {
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
-                                    dialog.show();
+
                                     String uploadID = mDatabaseRef.push().getKey();
                                     String ten = addtensp.getText().toString().trim();
                                     String gia = addgiasp.getText().toString().trim();
                                     String soluong = addsoluong.getText().toString().trim();
                                     String gioithieu = addgioithieu.getText().toString().trim();
                                     if (ten.isEmpty() || gia.isEmpty()|| soluong.isEmpty()|| gioithieu.isEmpty()){
-                                        dialog.dismiss();
+
                                         Toast.makeText(ThemSanPhamUong.this, "Không Bỏ Trống Trường Nào Cả", Toast.LENGTH_SHORT).show();
                                     } else {
                                         SanPham upload = new SanPham(uploadID, ten, gia, soluong, gioithieu, uri.toString());
@@ -139,7 +138,6 @@ public class ThemSanPhamUong extends AppCompatActivity {
                                         addsoluong.setText("");
                                         addgiasp.setText("");
                                         addgioithieu.setText("");
-                                        dialog.dismiss();
                                     }
                                 }
                             });

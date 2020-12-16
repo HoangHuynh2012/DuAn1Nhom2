@@ -15,6 +15,7 @@ import com.example.duan1.R;
 import com.example.duan1.admin.fragmentgiamgia.VouCherAdActivity;
 import com.example.duan1.admin.fragmentqlnv.QuanLyNVActivity;
 import com.example.duan1.admin.quanlykh.QLkhachhangActivity;
+import com.example.duan1.admin.thongke.ThongKeActivity;
 import com.example.duan1.customer.CaiDatActivity;
 import com.example.duan1.customer.Login.DangNhapActivity;
 import com.example.duan1.employee.TaiKhoanNVActivity;
@@ -22,7 +23,7 @@ import com.example.duan1.employee.fragmentemployee.LichSuActivity;
 import com.example.duan1.employee.model.LichSu;
 
 public class TaiKhoanAdFragment extends Fragment {
-    TextView tvDangXuat,tvTTTK,tvCaiDat,tvvoucher,tvLichsu,tvqlnv,tvqlkh;
+    TextView tvDangXuat,tvTTTK,tvCaiDat,tvvoucher,tvLichsu,tvqlnv,tvqlkh,tvthongke;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class TaiKhoanAdFragment extends Fragment {
         tvLichsu = view.findViewById(R.id.tvLichSuMuaHang);
         tvqlnv = view.findViewById(R.id.tvThongTinNV);
         tvqlkh = view.findViewById(R.id.tvThongTinKH);
+        tvthongke = view.findViewById(R.id.tvThongKe);
         tvTTTK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,6 +75,12 @@ public class TaiKhoanAdFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), LichSuActivity.class));
+            }
+        });
+        tvthongke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ThongKeActivity.class));
             }
         });
         super.onViewCreated(view, savedInstanceState);

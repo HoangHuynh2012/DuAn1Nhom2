@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.thongke.ThongKeActivity">
+
+    <TextView
+        android:id="@+id/thongkedoanhthu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="thống kê doanh thu"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="25dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+    <TextView
+        android:id="@+id/thongkeloinhuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="thống kê lợi nhuận"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="25dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+</LinearLayout>

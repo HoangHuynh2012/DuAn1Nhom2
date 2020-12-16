@@ -47,7 +47,6 @@ public class ThemSanPhamAn extends AppCompatActivity {
     private DatabaseReference mDatabaseRef;
     private StorageTask mUploadTask;
 
-    CustomProgressDialog dialog = new CustomProgressDialog(ThemSanPhamAn.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,14 +126,14 @@ public class ThemSanPhamAn extends AppCompatActivity {
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
-                                    dialog.show();
+
                                     String uploadID = mDatabaseRef.push().getKey();
                                     String ten = addtensp.getText().toString().trim();
                                     String gia = addgiasp.getText().toString().trim();
                                     String soluong = addsoluong.getText().toString().trim();
                                     String gioithieu = addgioithieu.getText().toString().trim();
                                     if (ten.isEmpty() || gia.isEmpty() || soluong.isEmpty() || gioithieu.isEmpty()){
-                                          dialog.dismiss();
+
                                         Toast.makeText(ThemSanPhamAn.this, "Không Bỏ Trống Trường Nào Cả", Toast.LENGTH_SHORT).show();
                                     } else {
                                         SanPham upload = new SanPham(uploadID, ten, gia, soluong, gioithieu, uri.toString());
@@ -144,7 +143,6 @@ public class ThemSanPhamAn extends AppCompatActivity {
                                         addsoluong.setText("");
                                         addgiasp.setText("");
                                         addgioithieu.setText("");
-                                        dialog.dismiss();
                                     }
                                 }
                             });

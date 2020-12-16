@@ -25,7 +25,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DuAn1">
-        <activity android:name=".admin.DoiMatKhauAdminActivity"></activity>
+        <activity android:name=".admin.thongke.ThongKeDoanhThu"></activity>
+        <activity android:name=".admin.thongke.ThongKeLoiNhuan" />
+        <activity android:name=".admin.thongke.ThongKeActivity" />
+        <activity android:name=".admin.DoiMatKhauAdminActivity" />
         <activity android:name=".customer.SuaTTActivity" />
         <activity android:name=".admin.ThemSanPhamUong" />
         <activity android:name=".admin.ThemSanPhamPhoBien" />
@@ -71,7 +74,7 @@
         <activity android:name=".customer.WebView" />
         <activity android:name=".MainActivity" />
         <activity android:name=".customer.Onbroading.OnbroadingActivity" />
-        <activity android:name=".customer.TrangChuActivity"></activity>
+        <activity android:name=".customer.TrangChuActivity" />
         <activity android:name=".customer.ThongTinTaiKhoanActivity" />
         <activity android:name=".customer.Login.DangNhapActivity" />
         <activity android:name=".customer.Login.DangNhapBangEmail" />

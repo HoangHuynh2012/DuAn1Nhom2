@@ -175,7 +175,30 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/imageTKe"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/ic_baseline_list" />
+
+        <TextView
+            android:id="@+id/tvThongKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageTKe"
+            android:text="Thống Kê"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
