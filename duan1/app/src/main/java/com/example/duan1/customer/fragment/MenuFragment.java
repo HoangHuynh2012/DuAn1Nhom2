@@ -42,7 +42,7 @@ public class MenuFragment extends Fragment {
             imgGioHang.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (role.equals("3")) {
+                    if (role.equals("3") || role.equals("4")) {
                         Intent i = new Intent(getActivity(), XemGioHang.class);
                         startActivity(i);
                     } else if (role.equals("2")) {

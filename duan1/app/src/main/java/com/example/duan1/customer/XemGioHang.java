@@ -58,7 +58,7 @@ public class XemGioHang extends AppCompatActivity {
     FirebaseUser firebaseUser;
     FirebaseAuth firebaseAuth;
     int bd;
-    String nguoidangnhap,keyId;
+    String nguoidangnhap,keyId,keyMail;
     public static String abc,tongtientatca,tennguoimua;
     public static TextView nguoimua, sdt,hienthitien,tongtienht;
     EditText maudai;
@@ -150,8 +150,14 @@ public class XemGioHang extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     NguoiDungMailMode mode = snapshot.getValue(NguoiDungMailMode.class);
                     assert mode != null;
+                    keyMail = mode.getUserId();
                     abc = mode.getEmail();
                     nguoimua.setText(abc);
+                    try {
+                        etdiachi.setText(mode.getDiachi());
+                    }catch (NullPointerException e){
+                        etdiachi.setText(" ");
+                    }
                     FirebaseRecyclerOptions<Cart> options =
                             new FirebaseRecyclerOptions.Builder<Cart>()
                                     .setQuery(FirebaseDatabase.getInstance().getReference().child("Cart").orderByChild("tenkhachhang").equalTo(abc), Cart.class)
@@ -220,8 +226,13 @@ public class XemGioHang extends AppCompatActivity {
                     hashMap.put("tongtien", tongtien);
                     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Oder");
                     if (!diachi.isEmpty()) {
-                        DatabaseReference data = FirebaseDatabase.getInstance().getReference().child("NguoiDung");
-                        data.child(key).child("diachi").setValue(diachi);
+                        if (!(key==null)) {
+                            DatabaseReference data = FirebaseDatabase.getInstance().getReference().child("NguoiDung");
+                            data.child(key).child("diachi").setValue(diachi);
+                        } else {
+                            DatabaseReference data1 = FirebaseDatabase.getInstance().getReference("NguoiDungMail").child(firebaseUser.getUid());
+                            data1.child("diachi").setValue(diachi);
+                        }
                         //
                         databaseReference.child(timesmap).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
